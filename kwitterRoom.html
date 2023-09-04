@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salas Kwitter</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	<button id="logout"  class=" btn btn-danger glyphicon glyphicon-log-out" onclick="logout()">Logout</button>
+
+	<center>
+		<h1  class="header">	
+			whatsapp 2
+			<sup>
+				<img src="https://i.pinimg.com/originals/0e/81/ab/0e81ab8b719ddf589c324db4f5c31135.png">
+			</sup>
+		</h1>
+		<h3 id="bem_vindo" class="color_white"></h3>
+
+		<div class="form-group input_div_room_page">
+			<label class="color_white">#Adicionar Sala:</label>
+			<input type="text" id="adicionarSala" class="form-control" placeholder="Adicionar sala">
+		</div>
+		
+		<button class="btn btn-warning" onclick="addRoom()">#Adicionar Sala</button>
+        
+		<h3 class="color_white">#SALASTRENDING</h3>
+        
+		<div id="output"></div>
+		
+	</center>
+</div>
+
+
+<script src="kwitterRoom.js"></script>
+</body>
+</html>
